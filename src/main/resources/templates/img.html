@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图片</title>
+</head>
+<body>
+
+<#list img as i>
+    <div>
+        <img src="http://39.105.159.42/${local}/${i}">
+        <br/>
+        <a href="/getImg?filepath=${i}">${i}</a>
+    </div>
+</#list>
+
+</body>
+
+</html>
