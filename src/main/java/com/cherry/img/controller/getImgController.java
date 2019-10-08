@@ -51,7 +51,7 @@ public class getImgController {
             fileList.add(file.getName());
         }
         session.setAttribute("pack", pack);
-        session.setAttribute("local", pack + "\\" + thumbdire.getName());
+        session.setAttribute("local", pack + "/" + thumbdire.getName());
         session.setAttribute("img", fileList);
         return "img";
     }
